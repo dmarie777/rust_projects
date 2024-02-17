@@ -4,5 +4,13 @@ fn main() {
     println!("The value of x is: {x}");
     x = 7;
     println!("The value of x is: {x}");
-    println!("{MY_CONSTANT}")
+    println!("{MY_CONSTANT}");
+    // shadowing
+    let y = 3;
+    let y = y + 1;
+    {
+        let y = y * 2;
+        println!("The value of y is {y}");
+    };
+    println!("The value of y is {y}");
 }
