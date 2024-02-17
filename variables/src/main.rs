@@ -13,4 +13,11 @@ fn main() {
         println!("The value of y is {y}");
     };
     println!("The value of y is {y}");
+    // shadowing - changing the data type pf a variable
+    {
+        let z = 5;
+        println!("{z}");
+        let z = "1";
+        println!("{z}");
+    }
 }
